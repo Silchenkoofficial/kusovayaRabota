@@ -19,7 +19,7 @@ char connect(TcpSocket& socket) {
 	//    type = 1;
 	switch (type) {
 	case 1: {
-		//            cout << "Введите IP-адрес: "; cin >> ip; cout << endl;
+		cout << "Введите IP-адрес: "; cin >> ip; cout << endl;
 		socket.connect(ip, 2000);
 		text += "Client";
 		mode = 'c';
